@@ -27,6 +27,11 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 
+/* quick sort*/
+void quick_sort_swap(int *array, size_t size, int low, int high);
+int quick_sort_pratition(int *array, size_t size, int low, int high);
+void quick_sort_recursion(int *array, size_t size, int low, int high);
+
 /* swap node */
 void swp_nodes(listint_t **list, listint_t **n1, listint_t *n2);
 
