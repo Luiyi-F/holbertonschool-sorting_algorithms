@@ -36,9 +36,9 @@ int quick_sort_pratition(int *array, size_t size, int low, int high)
 	int pivot_v = array[high];
 	int iter1 = low - 1, iter2 = 0;
 
-	for (iter2 = low; iter2 < high; iter2++)
+	for (iter2 = low; iter2 <= high; iter2++)
 	{
-		if (array[iter2 < pivot_v])
+		if (array[iter2] < pivot_v)
 		{
 			iter1++;
 			quick_sort_swap(array, size, iter1, iter2);
